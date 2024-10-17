@@ -1,42 +1,112 @@
 # Description
 
-A rational number is defined as the quotient of two integers `a` and `b`, called the numerator and denominator, respectively, where `b != 0`.
+A rational number is defined as the quotient of two integers `a` and `b`, called the numerator and denominator, respectively, where `b` is not equal to zero.
 
 ~~~~exercism/note
 Note that mathematically, the denominator can't be zero.
-However in many implementations of rational numbers, you will find that the denominator is allowed to be zero with behaviour similar to positive or negative infinity in floating point numbers.
+However, in many implementations of rational numbers, you will find that the denominator is allowed to be zero, with behavior similar to positive or negative infinity in floating point numbers.
 In those cases, the denominator and numerator generally still can't both be zero at once.
 ~~~~
 
-The absolute value `|r|` of the rational number `r = a/b` is equal to `|a|/|b|`.
+## Operations on rational numbers
 
-The sum of two rational numbers `r₁ = a₁/b₁` and `r₂ = a₂/b₂` is `r₁ + r₂ = a₁/b₁ + a₂/b₂ = (a₁ * b₂ + a₂ * b₁) / (b₁ * b₂)`.
+### Absolute value
 
-The difference of two rational numbers `r₁ = a₁/b₁` and `r₂ = a₂/b₂` is `r₁ - r₂ = a₁/b₁ - a₂/b₂ = (a₁ * b₂ - a₂ * b₁) / (b₁ * b₂)`.
+The absolute value of the rational number `r = a / b` is given by:
 
-The product (multiplication) of two rational numbers `r₁ = a₁/b₁` and `r₂ = a₂/b₂` is `r₁ * r₂ = (a₁ * a₂) / (b₁ * b₂)`.
+```text
+|r| = |a / b| = |a| / |b|
+```
 
-Dividing a rational number `r₁ = a₁/b₁` by another `r₂ = a₂/b₂` is `r₁ / r₂ = (a₁ * b₂) / (a₂ * b₁)` if `a₂` is not zero.
+### Sum
 
-Exponentiation of a rational number `r = a/b` to a non-negative integer power `n` is `r^n = (a^n)/(b^n)`.
+The sum of two rational numbers `r₁ = a₁ / b₁` and `r₂ = a₂ / b₂` is given by:
 
-Exponentiation of a rational number `r = a/b` to a negative integer power `n` is `r^n = (b^m)/(a^m)`, where `m = |n|`.
+```text
+r₁ + r₂ = a₁ / b₁ + a₂ / b₂
+        = (a₁ * b₂ + a₂ * b₁) / (b₁ * b₂)
+```
 
-Exponentiation of a rational number `r = a/b` to a real (floating-point) number `x` is the quotient `(a^x)/(b^x)`, which is a real number.
+### Difference
 
-Exponentiation of a real number `x` to a rational number `r = a/b` is `x^(a/b) = root(x^a, b)`, where `root(p, q)` is the `q`th root of `p`.
+The difference of two rational numbers `r₁` and `r₂` is given by:
 
-Implement the following operations:
+```text
+r₁ - r₂ = a₁ / b₁ - a₂ / b₂
+        = (a₁ * b₂ - a₂ * b₁) / (b₁ * b₂)
+```
 
-- addition, subtraction, multiplication and division of two rational numbers,
-- absolute value, exponentiation of a given rational number to an integer power, exponentiation of a given rational number to a real (floating-point) power, exponentiation of a real number to a rational number.
+### Product
 
-Your implementation of rational numbers should always be reduced to lowest terms.
-For example, `4/4` should reduce to `1/1`, `30/60` should reduce to `1/2`, `12/8` should reduce to `3/2`, etc.
-To reduce a rational number `r = a/b`, divide `a` and `b` by the greatest common divisor (gcd) of `a` and `b`.
-So, for example, `gcd(12, 8) = 4`, so `r = 12/8` can be reduced to `(12/4)/(8/4) = 3/2`.
-The reduced form of a rational number should be in "standard form" (the denominator should always be a positive integer).
-If a denominator with a negative integer is present, multiply both numerator and denominator by `-1` to ensure standard form is reached.
-For example, `3/-4` should be reduced to `-3/4`
+The product (multiplication) of two rational numbers `r₁` and `r₂` is given by:
 
-Assume that the programming language you are using does not have an implementation of rational numbers.
+```text
+r₁ * r₂ = (a₁ * a₂) / (b₁ * b₂)
+```
+
+### Division
+
+The quotient of two rational numbers `r₁` and `r₂`, where `r₂` is non-zero, is given by:
+
+```text
+r₁ / r₂ = (a₁ * b₂) / (a₂ * b₁)
+```
+
+### Exponentiation
+
+#### Exponentiation of a rational number
+
+Let `r = a / b`.
+
+* Raising `r` to a non-negative integer `n` is given by:
+
+  ```text
+  r^n = (a^n) / (b^n)
+  ```
+
+* Raising `r` to a negative integer `n` is given by:
+
+  ```text
+  r^n = (b^m) / (a^m)
+  ```
+
+  where `m = |n|` (the absolute value of `n`).
+
+* Raising `r` to a real (floating-point) number `x` is given by:
+
+  ```
+  r^x = (a^x) / (b^x)
+  ```
+
+  The result is a real number.
+
+#### Exponentiation of a real number
+
+Let `r = a / b`. Raising the real (floating-point) number `x` to the rational number `r` is given by:
+
+```text
+x^r = x^(a / b)
+    = root(x^a, b)
+```
+
+where `root(p, q)` is the *q*th root of p.
+
+## Implementation requirements
+
+Given that you should not use built-in support for rational numbers, implement the following operations:
+
+- addition, subtraction, multiplication, and division of two rational numbers
+- absolute value of a rational number
+- exponentiation of a rational number:
+  - to an integer number
+  - to a real (floating-point) number
+- exponentiation of a real number to a rational number
+
+Your implementation should always reduce fractions to their lowest terms.
+For example, `4/4` should reduce to `1/1`, `30/60` should reduce to `1/2`, `12/8` should reduce to `3/2`, and so on.
+To reduce a rational number `r = a/b`, divide both `a` and `b` by the greatest common divisor (GCD) of `a` and `b`.
+For example, `GCD(12, 8) = 4`, so `r = 12/8` should be reduced to `(12/4) / (8/4) = 3/2`.
+
+The reduced fraction should be in "standard form" meaning the denominator must always be a positive integer.
+If the denominator is negative, multiply both the numerator and denominator by `-1` to achieve standard form.
+For example, `3/-4` should be written as `-3/4`.
