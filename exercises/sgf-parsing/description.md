@@ -47,7 +47,7 @@ For example:
 
 Here `AB` (add black) is used to add three black stones to the board.
 
-All property values will be of the [SGF Text type][sgf-text].
+All property values will be of the SGF Text type.
 You don't need to implement any other value type.
 Although you can read the [full documentation of the Text type][sgf-text], a summary of the important points is below:
 
