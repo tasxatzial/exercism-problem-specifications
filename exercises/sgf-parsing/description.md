@@ -2,7 +2,7 @@
 
 Parsing a Smart Game Format string.
 
-[SGF][sgf] is a standard format for storing board game files, in particular go.
+[SGF][sgf] is a standard format for storing board game files, particularly in the game of Go.
 
 SGF is a fairly simple format.
 An SGF file usually contains a single tree of nodes, where each node is a property list.
