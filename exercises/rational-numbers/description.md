@@ -18,7 +18,7 @@ The absolute value of the rational number `r = a / b` is given by:
 |r| = |a / b| = |a| / |b|
 ```
 
-### Sum
+### Addition
 
 The sum of two rational numbers `r₁ = a₁ / b₁` and `r₂ = a₂ / b₂` is given by:
 
@@ -27,7 +27,7 @@ r₁ + r₂ = a₁ / b₁ + a₂ / b₂
         = (a₁ * b₂ + a₂ * b₁) / (b₁ * b₂)
 ```
 
-### Difference
+### Subtraction
 
 The difference of two rational numbers `r₁` and `r₂` is given by:
 
@@ -36,9 +36,9 @@ r₁ - r₂ = a₁ / b₁ - a₂ / b₂
         = (a₁ * b₂ - a₂ * b₁) / (b₁ * b₂)
 ```
 
-### Product
+### Multiplication
 
-The product (multiplication) of two rational numbers `r₁` and `r₂` is given by:
+The product of two rational numbers `r₁` and `r₂` is given by:
 
 ```text
 r₁ * r₂ = (a₁ * a₂) / (b₁ * b₂)
