@@ -99,7 +99,7 @@ Given that you should not use built-in support for rational numbers, implement t
 - addition, subtraction, multiplication, and division of two rational numbers
 - exponentiation of a rational number:
   - to an integer number
-  - to a real (floating-point) number
+  - to a real number
 - exponentiation of a real number to a rational number
 
 Your implementation should always reduce fractions to their lowest terms.
