@@ -95,8 +95,8 @@ where `root(p, q)` is the *q*th root of p.
 
 Given that you should not use built-in support for rational numbers, implement the following operations:
 
-- addition, subtraction, multiplication, and division of two rational numbers
 - absolute value of a rational number
+- addition, subtraction, multiplication, and division of two rational numbers
 - exponentiation of a rational number:
   - to an integer number
   - to a real (floating-point) number
