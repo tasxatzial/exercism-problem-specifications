@@ -72,14 +72,6 @@ Let `r = a / b`.
 
   where `m = |n|` (the absolute value of `n`).
 
-* Raising `r` to a real (floating-point) number `x` is given by:
-
-  ```
-  r^x = (a^x) / (b^x)
-  ```
-
-  The result is a real number.
-
 #### Exponentiation of a real number
 
 Let `r = a / b`. Raising the real (floating-point) number `x` to the rational number `r` is given by:
@@ -97,9 +89,7 @@ Given that you should not use built-in support for rational numbers, implement t
 
 - absolute value of a rational number
 - addition, subtraction, multiplication, and division of two rational numbers
-- exponentiation of a rational number:
-  - to an integer number
-  - to a real number
+- exponentiation of a rational number to an integer number
 - exponentiation of a real number to a rational number
 
 Your implementation should always reduce fractions to their lowest terms.
