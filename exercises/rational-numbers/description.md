@@ -70,7 +70,7 @@ Let `r = a / b`.
   r^n = (b^m) / (a^m)
   ```
 
-  where `m = |n|` (the absolute value of `n`).
+  where `m` is the absolute value of `n`.
 
 #### Exponentiation of a real number
 
