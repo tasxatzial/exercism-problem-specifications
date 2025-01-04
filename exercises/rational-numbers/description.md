@@ -3,8 +3,8 @@
 A rational number is a number that can be expressed as a fraction, with an integer numerator `a` and a non-zero integer denominator `b`.
 
 ~~~~exercism/note
-Note that mathematically, the denominator can't be zero.
-However, in many implementations of rational numbers, you will find that the denominator is allowed to be zero, with behavior similar to positive or negative infinity in floating point numbers.
+Note that, mathematically, the denominator can't be zero.
+However, in many implementations of rational numbers, the denominator is allowed to be zero, with behavior similar to positive or negative infinity in floating-point numbers.
 In those cases, the denominator and numerator generally still can't both be zero at once.
 ~~~~
 
