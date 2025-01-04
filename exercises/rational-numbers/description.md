@@ -1,6 +1,6 @@
 # Description
 
-A rational number is defined as the quotient of two integers `a` and `b`, called the numerator and denominator, respectively, where `b` is not equal to zero.
+A rational number is a number that can be expressed as a fraction, with an integer numerator `a` and a non-zero integer denominator `b`.
 
 ~~~~exercism/note
 Note that mathematically, the denominator can't be zero.
@@ -46,7 +46,7 @@ r₁ * r₂ = (a₁ * a₂) / (b₁ * b₂)
 
 ### Division
 
-The quotient of two rational numbers `r₁` and `r₂`, where `r₂` is non-zero, is given by:
+The result of dividing two rational numbers `r₁` and `r₂`, where `r₂` is non-zero, is given by:
 
 ```text
 r₁ / r₂ = (a₁ * b₂) / (a₂ * b₁)
