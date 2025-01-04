@@ -93,9 +93,9 @@ Given that you should not use built-in support for rational numbers, implement t
 - exponentiation of a real number to a rational number
 
 Your implementation should always reduce fractions to their lowest terms.
-For example, `4/4` should reduce to `1/1`, `30/60` should reduce to `1/2`, `12/8` should reduce to `3/2`, and so on.
+For example, `4/4` reduces to `1/1`, `30/60` to `1/2`, `12/8` to `3/2`, and so on.
 To reduce a rational number `r = a/b`, divide both `a` and `b` by the greatest common divisor (GCD) of `a` and `b`.
-For example, `GCD(12, 8) = 4`, so `r = 12/8` should be reduced to `(12/4) / (8/4) = 3/2`.
+For example, `GCD(12, 8) = 4`, so `r = 12/8` reduces to `(12/4) / (8/4) = 3/2`.
 
 The reduced fraction should be in "standard form" meaning the denominator must always be a positive integer.
 If the denominator is negative, multiply both the numerator and denominator by `-1` to achieve standard form.
