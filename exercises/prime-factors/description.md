@@ -16,39 +16,41 @@ We need to find the **prime numbers** that divide 60.
 
 #### Step 1: Divide by 2 (the smallest prime)
 
-- 60 is divisible by 2, so we divide:
-
 ```text
-  60 ÷ 2 = 30 ➜ Factor found: 2
+60 ÷ 2 = 30
 ```
 
-- 30 is still divisible by 2, so we divide by 2 again:
+Since 2 divides 60, we record **2** as a factor.
+
+We continue dividing the last result (30).
 
 ```text
-  30 ÷ 2 = 15 ➜ Factor found: 2
+30 ÷ 2 = 15
 ```
 
-- 15 is **not** divisible by 2, so we stop dividing by 2.
+Since 2 divides 30, we record **2** as a factor, again.
+
+We now notice that 2 does **not** divide the last result (15), so we stop dividing by 2.
 
 #### Step 2: Divide by 3 (the next prime)
 
-- 15 is divisible by 3, so we divide:
-
 ```text
-  15 ÷ 3 = 5 ➜ Factor found: 3
+15 ÷ 3 = 5
 ```
 
-- 5 is **not** divisible by 3, so we stop dividing by 3.
+Since 3 divides 15, we record **3** as a factor.
+
+We now notice that 3 does **not** divide the last result (5), so we stop dividing by 3.
 
 #### Step 3: Divide by 5 (the next prime)
 
-- 5 is divisible by 5, so we divide:
-
 ```text
-  5 ÷ 5 = 1 ➜ Factor found: 5
+5 ÷ 5 = 1
 ```
 
-Since we've reached **1**, we're done!
+Since 5 divides 5, we record **5** as a factor.
+
+The process stops here, as we've reached **1**.
 
 ### Final Answer
 
